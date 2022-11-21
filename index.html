@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreur Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <h5 class="player-title">Playing Now</h5>
+            <div class="player-album">
+                <img src="images/music-image.jpg" alt="Album cover">
+            </div>
+            <h2 class="player-artist">Tropic Fuse</h2>
+            <h3 class="player-song">Fuse</h3>
+            <input type="range" step="any" min="0" max="100" value="0" class="player-level" id="range">
+            <div class="auto-duration">
+                <div class="start">0:00</div>
+                <div class="end">0:00</div>
+            </div>
+            <audio class="player-audio" controls id="audio">
+                <source src="music/Tropic Fuse - French Fuse.mp3" type="audio/mp3">
+            </audio>
+            <div class="player-controls">
+                <div class="player-btn">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
