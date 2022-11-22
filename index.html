@@ -12,12 +12,12 @@
         <div class="player">
             <h5 class="player-title">Playing Now</h5>
             <div class="player-album">
-                <img src="images/music-image.jpg" alt="Album cover">
+                <img src="images/music-image.jpg" alt="Album cover" >
             </div>
             <h2 class="player-artist">Tropic Fuse</h2>
             <h3 class="player-song">Fuse</h3>
             <input type="range" step="any" min="0" max="100" value="0" class="player-level" id="range">
-            <div class="auto-duration">
+            <div class="audio-duration">
                 <div class="start">0:00</div>
                 <div class="end">0:00</div>
             </div>
@@ -25,12 +25,22 @@
                 <source src="music/Tropic Fuse - French Fuse.mp3" type="audio/mp3">
             </audio>
             <div class="player-controls">
-                <div class="player-btn">
-                    
+                <div class="player-btn" id="backward">      
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#797d7f">
+                    <path d="m19.975 16.975-6.2-4.15q-.45-.3-.45-.825 0-.525.45-.825l6.2-4.15q.5-.325 1.025-.038.525.288.525.888v8.25q0 .6-.525.9-.525.3-1.025-.05Zm-10 0-6.2-4.15q-.45-.3-.45-.825 0-.525.45-.825l6.2-4.15q.5-.325 1.025-.038.525.288.525.888v8.25q0 .6-.525.9-.525.3-1.025-.05Z"/></svg>
                 </div>
+                <div class="player-btn blue" id="play">                                                                              
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white">
+                    <path d="M9.525 18.025q-.5.325-1.013.037Q8 17.775 8 17.175V6.825q0-.6.512-.888.513-.287 1.013.038l8.15 5.175q.45.3.45.85t-.45.85Z"/></svg>
+                </div>
+                <div class="player-btn" id="forward">          
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#797d7f">
+                    <path d="M4.05 16.975q-.5.35-1.025.05-.525-.3-.525-.9v-8.25q0-.6.525-.888.525-.287 1.025.038l6.2 4.15q.45.3.45.825 0 .525-.45.825Zm10 0q-.5.35-1.025.05-.525-.3-.525-.9v-8.25q0-.6.525-.888.525-.287 1.025.038l6.2 4.15q.45.3.45.825 0 .525-.45.825Z"/></svg>
+                </div>
+                
             </div>
         </div>
     </div>
-    
+<script src="main.js"></script>
 </body>
 </html>
