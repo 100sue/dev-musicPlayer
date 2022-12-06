@@ -49,6 +49,7 @@ if(sec.lenght < 2 ) {
     sec = "0"+sec;
 }
 document.getElementsByClassName('end')[0].innerHTML = min + ':' + sec;
+
 audio.ontimeupdate = function(){
 var min = 0;
 var sec = 0;
@@ -61,7 +62,7 @@ sec = secondMult.toString().split('.')[0];
 if(sec.lenght < 2 ) {
     sec = "0"+sec;
 }
-if(sec == 'Nan') {
+if(sec == 'NaN') {
     sec = "00";
 }
 document.getElementsByClassName('start')[0].innerHTML = min + ":" + sec;
